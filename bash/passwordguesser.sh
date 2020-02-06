@@ -33,6 +33,21 @@ else
           echo
         else
           echo "Try something else.."
+          read -s -p "Enter secret text:" myString
+            if [ $myString = $referenceString ]; then
+    	  echo ""
+              echo "You are right."
+              echo
+            else
+              echo "Try something else.."
+              read -s -p "Enter secret text:" myString
+                if [ $myString = $referenceString ]; then
+        	  echo ""
+                  echo "You are right."
+                  echo
+                
+  fi
+fi
 fi
 fi
 fi
